@@ -1,0 +1,30 @@
+service: local-invoke-demo
+# frameworkVersion: '4'
+
+# plugins:
+#   - serverless-better-credentials
+
+provider:
+  name: aws
+  region: ap-northeast-1
+  architecture: arm64
+
+package:
+  individually: true
+  patterns:
+    - '!./**'
+    - '!./**/*.go'
+
+functions:
+  hello:
+    handler: handler.hello
+    runtime: nodejs20.x
+    package:
+      patterns:
+        - handler.js
+          
+  hello-golang:
+    handler: bootstrap
+    runtime: provided.al2
+    package:
+      artifact: bin/hello-golang.zip

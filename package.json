@@ -1,0 +1,8 @@
+{
+  "name": "serverless-framework-v4-golang-local-invoke",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mkusaka/serverless-framework-v4-golang-local-invoke.git",
+  "author": "mkusaka <hinoshita1992@gmail.com>",
+  "license": "MIT"
+}
