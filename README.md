@@ -1,0 +1,1 @@
+# serverless-framework-v4-golang-local-invoke
